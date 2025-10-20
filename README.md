@@ -16,8 +16,6 @@ A compact PERN (Postgres · Express · React · Node) example store built for le
 
 ## Project snapshot
 
-Below are three example screenshots (replace these with your own images in `frontend/public` for nicer visuals):
-
 ![Homepage example](frontend/public/example-home.png)
 ![Create Product example](frontend/public/example-create.png)
 ![Themes detail example](frontend/public/example-themes.png)![alt text](image.png)
