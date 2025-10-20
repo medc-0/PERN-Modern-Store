@@ -19,8 +19,8 @@ A compact PERN (Postgres · Express · React · Node) example store built for le
 Below are three example screenshots (replace these with your own images in `frontend/public` for nicer visuals):
 
 ![Homepage example](frontend/public/example-home.png)
-![Product list example](frontend/public/example-list.png)
-![Product detail example](frontend/public/example-detail.png)
+![Create Product example](frontend/public/example-create.png)
+![Themes detail example](frontend/public/example-themes.png)![alt text](image.png)
 
 ## What’s included
 
@@ -58,18 +58,6 @@ If you want the frontend to call the backend during development, create `fronten
 
 ```env
 VITE_API_URL=http://localhost:3000/api
-```
-
-3. Prepare the database
-
-Create the Postgres database and run any seeds if desired:
-
-```powershell
-# create DB (PowerShell)
-createdb pern_test_store
-
-# optional: run seed file if you have a script or psql command
-# psql -d pern_test_store -f backend/seeds/products.sql
 ```
 
 Note: This project’s server will auto-create a `products` table if it doesn’t exist (see `backend/server.js`).
