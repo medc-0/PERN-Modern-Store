@@ -1,5 +1,5 @@
 import { Link, useResolvedPath } from "react-router-dom";
-import { ShoppingBagIcon, ShoppingCartIcon } from "lucide-react";
+import { ShoppingBagIcon, DollarSign } from "lucide-react";
 import ThemeSelector from "./ThemeSelector";
 import { useProductStore } from "../store/useProductStore";
 
@@ -17,12 +17,12 @@ function Navbar() {
           <div className="flex-1 lg:flex-none">
             <Link to="/" className="hover:opacity-80 transition-opacity">
               <div className="flex items-center gap-2">
-                <ShoppingCartIcon className="size-9 text-primary" />
+                <DollarSign className="size-9 text-primary" />
                 <span
-                  className="font-semibold font-mono tracking-widest text-2xl 
+                  className="font-semibold font-arial tracking-widest text-2xl 
                     bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary"
                 >
-                  POSGRESTORE
+                  PERN Product Store
                 </span>
               </div>
             </Link>
