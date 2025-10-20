@@ -1,13 +1,3 @@
-# pern-Product-store
-
-A minimal PERN (Postgres · Express · React · Node) full‑stack storefront for learning and rapid prototyping.
-
-[![Frontend: React](https://img.shields.io/badge/Frontend-React%2018-0A7EA4?logo=react&logoColor=white)](https://react.dev) [![Backend: Express](https://img.shields.io/badge/Backend-Express-000000?logo=express&logoColor=white)](https://expressjs.com) [![Database: PostgreSQL](https://img.shields.io/badge/Database-Postgres-316192?logo=postgresql&logoColor=white)](https://www.postgresql.org)
-
----
-
-## Summary
-
 # PERN Product Store
 
 [![Frontend: React](https://img.shields.io/badge/Frontend-React%2018-0A7EA4?logo=react&logoColor=white)](https://react.dev) [![Backend: Express](https://img.shields.io/badge/Backend-Express-000000?logo=express&logoColor=white)](https://expressjs.com) [![Database: PostgreSQL](https://img.shields.io/badge/Database-Postgres-316192?logo=postgresql&logoColor=white)](https://www.postgresql.org) [![License: ISC](https://img.shields.io/badge/license-ISC-blue.svg)](https://opensource.org/licenses/ISC)
@@ -18,7 +8,7 @@ A compact PERN (Postgres · Express · React · Node) example store built for le
 
 ![Homepage example](frontend/public/example-home.png)
 ![Create Product example](frontend/public/example-create.png)
-![Themes detail example](frontend/public/example-themes.png)![alt text](image.png)
+![Themes detail example](frontend/public/example-themes.png)
 
 ## What’s included
 
@@ -48,17 +38,17 @@ Create a `backend/.env` file. Example values used by this project:
 
 ```env
 PORT=3000
-DATABASE_URL=postgresql://username:password@localhost:5432/pern_test_store
+
+PGUSER=YOUR-INFO
+PGPASSWORD=YOUR-INFO
+PGHOST=YOUR-INFO
+PGDATABASE='neondb' #Uses neondb for hosted db and PostgreSQL
+
+ARCJET_KEY=YOUR-ARCJET-KEY
+ARCJET_ENV=development
+
 NODE_ENV=development
 ```
-
-If you want the frontend to call the backend during development, create `frontend/.env` with:
-
-```env
-VITE_API_URL=http://localhost:3000/api
-```
-
-Note: This project’s server will auto-create a `products` table if it doesn’t exist (see `backend/server.js`).
 
 4. Run the app (dev)
 
@@ -89,12 +79,6 @@ Base: /api/products
 - DELETE /api/products/:id — delete product
 
 See `backend/controllers/productController.js` for implementation details.
-
-Example create request (curl):
-
-```powershell
-curl -X POST http://localhost:3000/api/products -H "Content-Type: application/json" -d '{"name":"Atomic Coffee","price":9.99,"image":"/images/coffee.png"}'
-```
 
 ## Build for production
 
@@ -127,8 +111,6 @@ npm start
 - Add simple tests for API endpoints (Jest + supertest) and a CI workflow.
 - Add a script that runs `backend/seeds/products.js` to populate the DB automatically.
 
-## License
+## Thanks for Reading
+- Medc-0
 
-ISC
-
-- Set NODE_ENV=production, configure DATABASE_URL and JWT_SECRET.
