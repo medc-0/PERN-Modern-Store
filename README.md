@@ -1,4 +1,4 @@
-# pern-test-store
+# pern-Product-store
 
 A minimal PERN (Postgres · Express · React · Node) full‑stack storefront for learning and rapid prototyping.
 
@@ -8,7 +8,7 @@ A minimal PERN (Postgres · Express · React · Node) full‑stack storefront fo
 
 ## Summary
 
-# PERN Test Store
+# PERN Product Store
 
 [![Frontend: React](https://img.shields.io/badge/Frontend-React%2018-0A7EA4?logo=react&logoColor=white)](https://react.dev) [![Backend: Express](https://img.shields.io/badge/Backend-Express-000000?logo=express&logoColor=white)](https://expressjs.com) [![Database: PostgreSQL](https://img.shields.io/badge/Database-Postgres-316192?logo=postgresql&logoColor=white)](https://www.postgresql.org) [![License: ISC](https://img.shields.io/badge/license-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 
